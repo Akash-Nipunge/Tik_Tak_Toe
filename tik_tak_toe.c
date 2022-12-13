@@ -65,6 +65,7 @@ int main()
     do
     {
     make_blank();
+     system("CLS");
     print_box();
     while(check())
    {
@@ -81,6 +82,7 @@ int main()
      printf("\033[0;30m");
    }
    while(a[r-1][c-1]!=' ');
+    system("CLS");
    a[r-1][c-1]='X';
     print_box();
     if(cheackwin())
@@ -102,6 +104,7 @@ int main()
    }
    while(a[r-1][c-1]!=' ');
    a[r-1][c-1]='O';
+    system("CLS"); 
     print_box();
    if(cheackwin())
    break;
@@ -123,6 +126,7 @@ int main()
     }
     else
    {
+     system("CLS");
      printf("\n\n\n\t\tPLAYER 2 WINS WITH SCORE %d\n\n\n\n\n",p2);
    }
     printf("\033[0;30m");
